@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Level Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for help icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Chart.js for the scatter plot and bar chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="header">
+        <!-- Logo on the top-left -->
+        <img src="GGio0sizW-IQUqElzGqFH.jpg" alt="Logo" class="logo">
+    </div>
+    
+    <div class="container">
+        <h1>Predict Activity Level</h1>
+
+        <!-- Input fields for data -->
+        <form id="inputForm">
+            <label for="stress">Stress Level:</label>
+            <input type="number" id="stress" required>
+            
+            <label for="systolic">Systolic Blood Pressure:</label>
+            <input type="number" id="systolic" required>
+            
+            <label for="diastolic">Diastolic Blood Pressure:</label>
+            <input type="number" id="diastolic" required>
+
+            <button type="button" id="upload">Predict Activity Level</button>
+        </form>
+
+        <!-- Scatter Plot -->
+        <div>
+            <canvas id="scatterPlot" width="400" height="300"></canvas>
+        </div>
+
+        <!-- Bar Chart -->
+        <div>
+            <canvas id="barChart" width="400" height="300"></canvas>
+        </div>
+
+        <!-- Result Box -->
+        <div id="result" class="result-box"></div>
+    </div>
+
+    <!-- Help Icon -->
+    <div id="help-icon">
+        <a href="help.html" target="_blank">
+            <i class="fas fa-question-circle"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
